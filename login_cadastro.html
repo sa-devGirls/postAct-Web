@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
+    <h2>Seja bem-vindo(a) ao PostAct!</h2>
     <div class="container" id="container">
         <!-- Formulário do cadastro -->
-        <div class="form-container cadastro-container">
+        <div class="form-container sign-up-container">
             <form action="#">
                 <h1>Criar uma conta</h1>
 
@@ -24,7 +25,7 @@
         </div>
 
         <!-- Formulário do login -->
-        <div class="form-container login-container">
+        <div class="form-container sign-in-container">
             <form action="#">
                 <h1>Faça seu login</h1>
                 <input type="email" placeholder="Email">
@@ -39,22 +40,22 @@
         </div>
 
         <!-- Painel que sobrepõe os formulários -->
-        <div class="sob-container">
-            <div class="sob">
+        <div class="overlay-container">
+            <div class="overlay">
                 <!-- Painel do faça seu login -->
-                <div class="sob-painel sob-esquerda">
+                <div class="overlay-panel overlay-left">
                     <h1>Já tem uma conta?</h1>
                     <p>Seja bem vindo de volta! Clique no botão abaixo para logar na sua conta.</p>
 
-                    <button>Faça seu login</button>
+                    <button class="ghost" id="signIn">Faça seu login</button>
                 </div>
 
                 <!-- Painel do faça seu cadastro -->
-                <div class="sob painel sob-direita">
+                <div class="overlay-panel overlay-right">
                     <h1>Ainda não tem uma conta no PostAct?</h1>
                     <p>Clique no botão abaixo para realizar seu cadastro. É fácil e rápido!</p>
 
-                    <button >Cadastra-se</button>
+                    <button class="ghost" id="signUp">Cadastra-se</button>
                 </div>
             </div>
         </div>
