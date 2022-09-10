@@ -85,6 +85,10 @@ input {
 	width: 100%;
 }
 
+.btn{
+	background-color: #6C63FF;
+}
+
 .container {
 	background-color: #fff;
 	border-radius: 10px;
