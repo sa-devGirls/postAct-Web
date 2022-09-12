@@ -86,7 +86,16 @@ input {
 }
 
 .btn{
+	border-radius: 20px;
+	border: 1px solid #6C63FF;
 	background-color: #6C63FF;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	width: 200px;
 }
 
 .container {
