@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/index.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="/style/menu.css">
+    <title>Home</title>
 </head>
 <body>
     <div class="container">
     <header>
         <!--logo-->  
-        <figure class="logo_header">
+     <!--<figure class="logo_header">
             <img src="/img/logo_sem_fundo.png" alt="logo PostAct" width="90px">
             <figcaption>Logo PostAct</figcaption>
         </figure>     
-        <!--Menu-->
         <nav class="menu">
             <ul class="menuList">
                 <li class="menuItem">
@@ -36,7 +36,94 @@
                     <a href="">Perfil</a>
                 </li>     
             </ul>
-        </nav>
+        </nav>-->
+        <div class="sidebar">
+          <div class="logoContent">
+              <div class="logo">
+                  <i class='bx bxl-nodejs'></i>
+                  <div class="logoName">Bruno Salmito</div>
+              </div>
+              <!-- logo -->
+              <i class='bx bx-menu' id="btn"></i>
+          </div>
+          <!-- logoContent -->
+          <ul class="nav_list">
+              <li>
+                  <a href="#">
+                      <i class='bx bx-grid-alt' ></i>
+                      <span class="links_name">Dashboard</span>
+                      <span class="toolipe">Dashboard</span>
+                  </a>
+              </li>
+  
+              
+  
+              <li>
+                  <a href="#">
+                      <i class='bx bx-user' ></i>
+                      <span class="links_name">Usuário</span>
+                      <span class="toolipe">Usuário</span>
+                  </a>
+              </li>
+  
+              <li>
+                  <a href="#">
+                      <i class='bx bx-cog' ></i>
+                      <span class="links_name">Configurações</span>
+                      <span class="toolipe">Configurações</span>
+                  </a>
+              </li>
+  
+              <li>
+                  <a href="#">
+                      <i class='bx bx-folder-open' ></i>
+                      <span class="links_name">Arquivos</span>
+                      <span class="toolipe">Arquivos</span>
+                  </a>
+              </li>
+  
+              <li>
+                  <a href="#">
+                      <i class='bx bx-chat' ></i>
+                      <span class="links_name">Mensagens</span>
+                      <span class="toolipe">Mensagens</span>
+                  </a>
+              </li>
+  
+  
+              <li>
+                  <a href="#">
+                      <i class='bx bx-bar-chart' ></i>
+                      <span class="links_name">Relatórios</span>
+                      <span class="toolipe">Relatórios</span>
+                  </a>
+              </li>
+  
+              <li>
+                  <a href="#">
+                      <i class='bx bx-cart-alt' ></i>
+                      <span class="links_name">Vendas</span>
+                      <span class="toolipe">Vendas</span>
+                  </a>
+              </li>
+          </ul>
+          <!-- nav_list -->
+          <div class="profileContent">
+              <div class="profile">
+                  <div class="profileDetail">
+                      <img src="./img/brunosalmito.png">
+                      <div class="name_job">
+                          <div class="name">Bruno Salmito</div>
+                          <div class="job">Web Developer</div>
+                      </div>
+                  </div>
+                  <!-- profileDetail -->
+                  <i class='bx bx-log-out' id="logout" ></i>
+              </div>
+              <!-- profile -->
+          </div>
+          <!-- profileContent -->
+      </div>
     </header>
     <main>
    <!--barra de pesquisa-->   
