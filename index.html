@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <a target="_blank" href="https://icons8.com/icon/131/pesquisar">Pesquisar</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="/style/menu.css">
@@ -41,7 +43,7 @@
           <div class="logoContent">
               <div class="logo">
                   <i class='bx bxl-nodejs'></i>
-                  <div class="logoName">Bruno Salmito</div>
+                  <div class="logoName">PostAct</div>
               </div>
               <!-- logo -->
               <i class='bx bx-menu' id="btn"></i>
@@ -50,60 +52,31 @@
           <ul class="nav_list">
               <li>
                   <a href="#">
+                   <!-- <box-icon name="rocket">
                       <i class='bx bx-grid-alt' ></i>
-                      <span class="links_name">Dashboard</span>
-                      <span class="toolipe">Dashboard</span>
+                    </box-icon>-->
+                    <img class="icon" src="/img/home-button.png" alt="" width="28px">
+                      <span class="links_name">Início</span>
+                      <span class="toolipe">Início</span>
                   </a>
               </li>
-  
-              
-  
-              <li>
                   <a href="#">
-                      <i class='bx bx-user' ></i>
-                      <span class="links_name">Usuário</span>
-                      <span class="toolipe">Usuário</span>
-                  </a>
-              </li>
-  
-              <li>
-                  <a href="#">
-                      <i class='bx bx-cog' ></i>
+                    <img class="icon" src="/img/engrenagem.png" alt="" width="35px">
                       <span class="links_name">Configurações</span>
                       <span class="toolipe">Configurações</span>
                   </a>
-              </li>
-  
+              </li> 
+              <a href="#">
+                <img class="icon" src="/img/perfil.png" alt="" width="35px">
+                  <span class="links_name">Configurações</span>
+                  <span class="toolipe">Configurações</span>
+              </a>
+          </li> 
               <li>
                   <a href="#">
-                      <i class='bx bx-folder-open' ></i>
-                      <span class="links_name">Arquivos</span>
-                      <span class="toolipe">Arquivos</span>
-                  </a>
-              </li>
-  
-              <li>
-                  <a href="#">
-                      <i class='bx bx-chat' ></i>
-                      <span class="links_name">Mensagens</span>
-                      <span class="toolipe">Mensagens</span>
-                  </a>
-              </li>
-  
-  
-              <li>
-                  <a href="#">
-                      <i class='bx bx-bar-chart' ></i>
-                      <span class="links_name">Relatórios</span>
-                      <span class="toolipe">Relatórios</span>
-                  </a>
-              </li>
-  
-              <li>
-                  <a href="#">
-                      <i class='bx bx-cart-alt' ></i>
-                      <span class="links_name">Vendas</span>
-                      <span class="toolipe">Vendas</span>
+                    <img class="icon" src="/img/perfil.png" alt="" width="100px">
+                      <span class="links_name">Perfil</span>
+                      <span class="toolipe">Perfil</span>
                   </a>
               </li>
           </ul>
@@ -128,9 +101,9 @@
     <main>
    <!--barra de pesquisa-->   
         <div class="search-bar">
-            <input class="search-tct" type="text" placeholder="Pesquisar" />
-            <button class="right-side-button" @click="rightSide = !rightSide">
-              <img src="/img/lupa.png" alt="lupa" width="20px" height="20px">
+            <input class="search-tct" type="text" placeholder="Pesquisar"/>
+             <button class="right-side-button" @click="rightSide = !rightSide">
+              <img class="lupa" src="/img/lupaIcon.png" alt="lupa" width="20px" height="20px">
             </button>
           </div> 
         <!--Publicar-->
@@ -204,7 +177,7 @@
            </div>
              <ul class="listPost">
                 <li class="post">
-                    <img class="ftPerfil" src="https://w7.pngwing.com/pngs/798/436/png-transparent-computer-icons-user-profile-avatar-profile-heroes-black-profile.png " alt="ftPerfil" width="24px">
+                    <img class="ftPerfil" src="https://w7.pngwing.com/pngs/798/436/png-transparent-computer-icons-user-profile-avatar-profile-heroes-black-profile.png " alt="ftPerfil" width="28px">
                     <div class="post_info">
                             <h2>Nome usuário</h2>
                             <span class="usuario">@nomeUsuario</span>
@@ -223,7 +196,7 @@
               </ul>
             <ul class="listPost">
                 <li class="post">
-                    <img class="ftPerfil" src=" https://w7.pngwing.com/pngs/798/436/png-transparent-computer-icons-user-profile-avatar-profile-heroes-black-profile.png" alt="ftPerfil" width="24px">
+                    <img class="ftPerfil" src=" https://w7.pngwing.com/pngs/798/436/png-transparent-computer-icons-user-profile-avatar-profile-heroes-black-profile.png" alt="ftPerfil" width="28px">
                     <div class="post_info">
                         <h2>Nome usuário</h2>
                         <span>@nomeUsuario</span>
