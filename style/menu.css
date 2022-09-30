@@ -7,7 +7,6 @@
 }
 
 
-
 /* sidebar */
 .sidebar {
     position: fixed;
@@ -244,4 +243,9 @@
 
 .sidebar.active .toolipe {
     display: none;
+}
+
+.ftPerfil{
+    border-radius: 50%;
+    width: 40px;
 }
