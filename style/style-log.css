@@ -50,8 +50,6 @@ a {
 }
 
 button {
-	border-radius: 20px;
-	border: 1px solid #6C63FF;
 	background-color: #6C63FF;
 	color: #ffffff;
 	font-size: 12px;
@@ -80,6 +78,9 @@ button.ghost {
 
 form {
 	background-color: #ffffff;
+	/* border: 4px solid;
+	border-image: linear-gradient(to right, #6967ff, #01F1FE);
+	border-image-slice: 1; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -99,9 +100,10 @@ input {
 }
 
 .btn{
-	border-radius: 20px;
-	border: 1px solid #6C63FF;
-	background-color: #6C63FF;
+	border-radius: 5px;
+	border: none;
+	background: rgb(105,103,255);
+	background: linear-gradient(90deg, rgba(105,103,255,1) 0%, rgba(105,103,255,1) 0%, rgba(1,241,254,1) 100%, rgba(0,212,255,1) 100%);
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -114,8 +116,8 @@ input {
 .container {
 	background-color: #151728;
 	border-radius: 10px;
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
-	0 10px 10px rgba(0,0,0,0.22);
+	box-shadow: 0 14px 28px #6C63FF, 
+	0 10px 10px #01F1FE;
 	position: relative;
 	overflow: hidden;
 	width: 768px;
