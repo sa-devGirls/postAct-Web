@@ -104,7 +104,16 @@ input{
     z-index: 3;
     position: relative; 
     display: flex;
-    }
+}
+
+#lupa{
+    position: relative;
+    right: 40px;
+    display: flex;
+    justify-content: center;
+    
+}
+
 .usuario{
     margin-bottom: 8px;
 }
