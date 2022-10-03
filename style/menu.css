@@ -19,14 +19,14 @@
     transition: all 0.5s ease;
 }
 .icon{
-  
+    margin-left: auto;
+    margin-right: auto; 
 }
 .sidebar .logoContent .logo {
     width: 100%;
     height: 50px;
     display: flex;
     align-items: center;
-    color: #fff;
     opacity: 0;
     pointer-events: auto;
 }
@@ -82,7 +82,7 @@
     border: none;
     border-radius: 12px;
     outline: none;
-    background-color: #ffffff;
+    background-color: transparent;
     padding-left: 50px;
     font-size: 18px;
     color: #fff;
@@ -97,7 +97,7 @@
 }
 
 .sidebar ul li .bx-search:hover {
-    background-color: #fff;
+    background-color: transparent;
     color: #1d1d31;
 }
 
@@ -113,7 +113,7 @@
 
 .sidebar ul li a:hover {
     color: #11101d;
-    background-color: #fff;
+    background-color: transparent;
 }
 
 .sidebar ul li i {
@@ -191,13 +191,14 @@
     transform: translate(-50%, -50%);
     width: 122px;
     height: 35px;
-    background-color: #fff;
-    border: none;
-    border-radius: 12px;
+	border: 2px solid;
+	background-color: transparent;
+	border-image: linear-gradient(to right, #6967ff, #01F1FE);
+	border-image-slice: 1;
     outline: none;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.500);
     text-align: center;
-    color: #1d1d1d;
+    color: #ffffff;
     line-height: 35px;
     transition: 0;
     opacity: 0;
