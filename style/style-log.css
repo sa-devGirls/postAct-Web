@@ -102,6 +102,7 @@ input {
 	border-radius: 5px;
 	border: none;
 	background: #6C63FF;
+	/* background-image: linear-gradient(to right, #01F1FE,#6967ff); */
 	color: #ffffff;
 	font-size: 12px;
 	font-weight: bold;
