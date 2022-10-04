@@ -18,10 +18,7 @@
     padding: 6px 14px;
     transition: all 0.5s ease;
 }
-.icon{
-    margin-left: auto;
-    margin-right: auto; 
-}
+
 .sidebar .logoContent .logo {
     width: 100%;
     height: 50px;
@@ -252,3 +249,4 @@
     border-radius: 50%;
     width: 40px;
 }
+
