@@ -84,20 +84,6 @@
     font-size: 18px;
     color: #fff;
 }
-
-.sidebar ul li .bx-search {
-    position: absolute;
-    font-size: 22px;
-    color: #fff;
-    z-index: 999;
-    cursor: pointer;
-}
-
-.sidebar ul li .bx-search:hover {
-    background-color: transparent;
-    color: #1d1d31;
-}
-
 .sidebar ul li a {
     display: flex;
     align-items: center;
@@ -108,33 +94,18 @@
     transition: all 0.5s ease;
 }
 
-.sidebar ul li a:hover {
-    color: #11101d;
+/*.sidebar ul li a:hover {
+    color: #6054dd;
     background-color: transparent;
-}
+}*/
 
-.sidebar ul li i {
+/*.sidebar ul li i {
     min-width: 50px;
     height: 50px;
     line-height: 50px;
     border-radius: 12px;
     text-align: center;
-}
-
-.sidebar .profileContent {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: #fff;
-}
-
-.sidebar .profileContent .profile {
-    position: relative;
-    height: 60px;
-    padding: 10px 6px;
-    background-color: #151728;;
-}
+}*/
 
 .sidebar .profileContent .profile .profileDetail {
     display: flex;
