@@ -57,9 +57,9 @@ body{
     color: white;
 }
 
-/* .attach-img{
-    
-} */
+.attach-img{
+    width: 35px;
+}
 
 .box{
     background-color: #151728;
