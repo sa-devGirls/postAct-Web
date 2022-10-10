@@ -16,20 +16,13 @@
 
         <div class="sidebar">
           <div class="logoContent">
-              <div class="logo">
-                  <i class='bx bxl-nodejs'></i>
-                  <div class="logoName">PostAct</div>
-              </div>
-              <!-- logo -->
-              <i class='bx bx-menu' id="btn"></i>
-          </div>
-          <!-- logoContent -->
-          <ul class="nav_list">
-            <li>
+              
+           <li class="logoContent">
               <a href="#">
                 <img id="logo" src="img/logo.png" alt="logo" width="43px">
               </a>
            </li>
+          <ul class="nav_list">
               <li>
                   <a href="index.html">
                     <img src="img/menu.png" alt="inicio" width="33px" height="33px">
@@ -45,15 +38,13 @@
                       <span class="toolipe">Procurar</span>
                   </a>
               </li>
-              
-              <li>
+              <li class=>
                   <a href="#">
                     <img src="img/engrenagem.png" alt="configurações" width="28px">
                       <span class="links_name">Configurações</span>
                       <span class="toolipe">Configurações</span>
                   </a>
               </li> 
-
               <li>
                 <a href="perfil.html">
                   <img src="img/perfil.png" alt="Perfil" width="28px">
@@ -61,8 +52,8 @@
                     <span class="toolipe">Perfil</span>
                 </a>
             </li> 
-
-          </ul>
+          </ul> 
+         
       </div>
     </header>
     <main>
@@ -70,20 +61,17 @@
         <div class="search-bar">
             <input class="search-tct" type="text" placeholder="Pesquisar"/>
              <button class="right-side-button" @click="rightSide = !rightSide">
-              <img id="lupa" src="img/lupa.png" alt="lupa" width="20px" height="20px">
+              <img class="lupa" id="lupa" src="img/lupa.png" alt="lupa" width="20px" height="20px">
             </button>
           </div> 
         <!--Publicar-->
         <div class="timeline-right">
-          <div class="status box">
+          <div class="status-box">
               <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" class="status-img">
               <textarea class="status-textarea" placeholder="Escreva ou suba uma foto."></textarea>
                 <img class="attach-img" src="img/adicionar-imagem.png" alt="">
                 <button class="publish-button">Publicar</button>
           </div>
-        
-        <!--bioooo-->
-
           <!--Publicação-->
         <section class="feed">
            <div class="album box"> 

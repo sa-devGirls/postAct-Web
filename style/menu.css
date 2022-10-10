@@ -56,7 +56,9 @@
     cursor: pointer;
     color: #fff;
 }
-
+.logoContent{
+    margin-bottom: 50px;
+}
 .sidebar ul {
     margin-top: 20px;
 }
@@ -83,6 +85,9 @@
     padding-left: 50px;
     font-size: 18px;
     color: #fff;
+}
+.sidebar li a{
+    margin-top: 15px;   
 }
 .sidebar ul li a {
     display: flex;
@@ -156,8 +161,8 @@
     position: absolute;
     top: 0;
     left: 122px;
-    transform: translate(-50%, -50%);
-    width: 122px;
+    transform: translate(-60%, -60%);
+    width: 100px;
     height: 35px;
 	border: 2px solid;
 	background-color: transparent;
@@ -178,9 +183,7 @@
     transition: all 0.5s ease;
     top: 50%;
     opacity: 1;
-
 }
-
 /* Sidebar active */
 .sidebar.active {
     width: 300px;
@@ -211,11 +214,9 @@
 .sidebar.active .profile #logout {
     left: 90%;
 }
-
 .sidebar.active .toolipe {
     display: none;
 }
-
 .ftPerfil{
     border-radius: 50%;
     width: 40px;
