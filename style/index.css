@@ -278,7 +278,8 @@ form button{
     background-color: #151728;
     color: white;
     border-radius: 5px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    border: solid 2px rgb(22, 212, 15);
 }
 .post{
     padding:20px 5px;
@@ -301,4 +302,9 @@ form button{
 
 .timeline-right{
     border: 2px solid rgb(166, 11, 172);
+}
+
+.post-feed{
+    margin-bottom: 20px;
+    /* border: 1px solid rgb(36, 155, 224) */
 }
