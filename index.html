@@ -57,81 +57,85 @@
         </div>
     </header>
     <main>
-   <!--barra de pesquisa-->   
-        <div class="search-bar">
-            <input class="search-tct" type="text" placeholder="Pesquisar"/>
-             <button class="right-side-button" @click="rightSide = !rightSide">
-              <img class="lupa" id="lupa" src="img/lupa.png" alt="lupa" width="20px" height="20px">
-            </button>
-          </div> 
-
+    <!--barra de pesquisa-->   
+    <div class="search-bar">
+      <input class="search-tct" type="text" placeholder="Pesquisar"/>
+      <button class="right-side-button" @click="rightSide = !rightSide">
+        <img class="lupa" id="lupa" src="img/lupa.png" alt="lupa" width="20px" height="20px">
+      </button>
+    </div> 
 
     <!--Publicar-->
-          
-            <div class="status-box">
-              <img src="img/karol-perfil.jpg" class="status-img">
-              <textarea class="status-textarea" placeholder="Escreva ou suba uma foto." rows="5"></textarea>
-                <img class="attach-img" src="img/adicionar-imagem.png">
-                <button class="publish-button">Publicar</button>
-            </div>
-         
 
-     <!--Publicação-->
-        <section class="feed">
-              <div class="post-feed">
-                <ul class="listPost">
-                  <li class="post">
-                      <img class="ftPerfil" src="img/thaissa-perfil.jpg" class="status-img" alt="ftPerfil" width="28px">
-                      
-                      <div class="post_info">
-                              <h2>Thaíssa Candella</h2>
-                              <span class="usuario">@thaicandella</span>
-                              <div class="text-post">Praticando HTML, CSS e JavaScript! 😍
-                                Calculadora onde é possível limpar operações, mudar o tema e copiar o resultado :)
-                                <div class="album-photos">
-                                  <img src="img/exemplo-att.PNG" class="album-photo"/>
-                                </div>
-                              </div>
-                      </div>
-                 </li>
-                </ul>
-              </div>
+      <div class="status-box">
+        <ul class="list-publish">
+          <li class="publish">
+            <img src="img/karol-perfil.jpg" class="status-img">
+            <textarea class="status-textarea" placeholder="Escreva ou suba uma foto." rows="5"></textarea>
+              <img class="attach-img" src="img/adicionar-imagem.png">
+              <button class="publish-button">Publicar</button>
+          </li>
+        </ul>
 
-              <div class="post-feed">
-                <ul class="listPost">
-                  <li class="post">
-                    <img class="ftPerfil" src="img/thienne-perfil.jpg" class="status-img" alt="ftPerfil" width="28px">
-                      <div class="post_info">
-                          <h2>Thienne Czizeweski</h2>
-                          <span>@czizethienne</span>
-                          <p class="text-post">Hoje finalizei meu curso de soft skills de liderança feminina e comunicação da WoMakers, apenas de mulheres que trabalham na Microsoft.</p>
-                      </div>
-                  </li>
-                </ul>  
-                </div>
+      </div>
+  
 
-                <div class="post-feed">
-                  <ul class="listPost">
-                    <li class="post">
-                        <img class="ftPerfil" src="img/thaissa-perfil.jpg" class="status-img" alt="ftPerfil" width="28px">
-                        
-                        <div class="post_info">
-                                <h2>Thaíssa Candella</h2>
-                                <span class="usuario">@thaicandella</span>
-                                <div class="text-post">Praticando HTML, CSS e JavaScript! 😍
-                                  Calculadora onde é possível limpar operações, mudar o tema e copiar o resultado :)
-                                  <div class="album-photos">
-                                    <img src="img/exemplo-att.PNG" class="album-photo"/>
-                                  </div>
-                                </div>
+    <!--Publicação-->
+    <section class="feed">
+        <div class="post-feed">
+          <ul class="listPost">
+            <li class="post">
+                <img class="ftPerfil" src="img/thaissa-perfil.jpg" class="status-img" alt="ftPerfil" width="28px">
+                
+                <div class="post_info">
+                        <h2>Thaíssa Candella</h2>
+                        <span class="usuario">@thaicandella</span>
+                        <div class="text-post">Praticando HTML, CSS e JavaScript! 😍
+                          Calculadora onde é possível limpar operações, mudar o tema e copiar o resultado :)
+                          <div class="album-photos">
+                            <img src="img/exemplo-att.PNG" class="album-photo"/>
+                          </div>
                         </div>
-                    </li>
-                  </ul>
                 </div>
-        </section>
+          </li>
+          </ul>
+        </div>
+
+        <div class="post-feed">
+          <ul class="listPost">
+            <li class="post">
+              <img class="ftPerfil" src="img/thienne-perfil.jpg" class="status-img" alt="ftPerfil" width="28px">
+                <div class="post_info">
+                    <h2>Thienne Czizeweski</h2>
+                    <span>@czizethienne</span>
+                    <p class="text-post">Hoje finalizei meu curso de soft skills de liderança feminina e comunicação da WoMakers, apenas de mulheres que trabalham na Microsoft.</p>
+                </div>
+            </li>
+          </ul>  
           </div>
-          
+
+          <div class="post-feed">
+            <ul class="listPost">
+              <li class="post">
+                  <img class="ftPerfil" src="img/thaissa-perfil.jpg" class="status-img" alt="ftPerfil" width="28px">
+                  
+                  <div class="post_info">
+                          <h2>Thaíssa Candella</h2>
+                          <span class="usuario">@thaicandella</span>
+                          <div class="text-post">Praticando HTML, CSS e JavaScript! 😍
+                            Calculadora onde é possível limpar operações, mudar o tema e copiar o resultado :)
+                            <div class="album-photos">
+                              <img src="img/exemplo-att.PNG" class="album-photo"/>
+                            </div>
+                          </div>
+                  </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        </div>
     </main>
+   
 </body>
 </div>
 </html>

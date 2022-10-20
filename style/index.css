@@ -8,24 +8,83 @@ body{
     margin: 0 auto;
     display: flex;
 }
-/* .status-share {
-    background-color: #6C63FF;
+
+header{
+    flex-basis: 20%;
+   }
+   
+main{
+   flex-basis: 70%;
+   }
+
+/* input do pesquisar */
+input{
+    outline: none;
+    height: 100%;
+    width: 100%;
+    display: block;
     border: none;
-    color: #fff;
-    border-radius: 4px;
-    padding: 10px 20px;
-    margin-left: auto;
-    box-shadow: 0 0 20px #6C63FF;
-    cursor: pointer;
-} */
-/* .status-menu-item{
-    text-decoration: none;
+    padding: 0 54px;
+    background-size: 16px;
+    background-position: 25px 50%;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    background-color: transparent;
+    margin-top: 10px;
+}
+
+/* div da barra de pesquisa */
+.search-bar {
+   margin-top: 20PX;
+   margin-bottom: 35px;
+   height: 60px;
+   z-index: 3;
+   position: relative; 
+   display: flex;
+   box-shadow: 0 0 10px #6C63FF;
+   display: flex;
+   align-items: center;
+}
+
+/* botão da lupa */
+.right-side-button{
+   position: relative;
+   right: 10px;
+   justify-content: center;
+   display: flex;
+   align-items: center;
+   width: 50px;
+   height: 50px;
+   background-color: transparent;
+   border: none;
+   margin-top: 10px;
+}
+.lupa{
+  padding-bottom: 1px;
+}
+
+
+/* div do publicar */
+.status-box{
+    margin-bottom: 20px;
+}
+
+/* ul do publicar */
+.list-publish{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #151728;
     color: white;
-    padding: 10px 14px;
-    line-height: 0.7;
-    font-weight: 500;
-    border-radius: 20px;
-} */
+    border-radius: 5px;
+}
+
+/* li do publicar */
+.publish{
+    display: flex;
+    align-items: flex-start;
+}
+
+/* foto de perfil */
 .status-img{
     width: 50px;
     height: 50px;
@@ -35,6 +94,7 @@ body{
     border: #00FF00 2px solid;
     
 }
+/* escreva ou suba uma foto */
 .status-textarea{
     width: 100%;
     outline: none;
@@ -47,7 +107,7 @@ body{
     padding: 10px;
 }
 
-
+/* botao publicar */
 .publish-button{
     border: transparent;
     box-shadow: 0 0 10px #6C63FF;
@@ -57,197 +117,23 @@ body{
     background-color: #6C63FF;
     color: white;
     margin-top: 100px;
-    /* border: solid 2px #0000FF; */
 }
+/* botão anexar */
 .attach-img{
     width: 30px;
     margin-right: 10px;
     margin-top: 100px;
-    /* border: solid 2px #0000FF; */
+}
 
-}
-.status-box{
-   display: flex;
-   align-items: center;
-   /* border: 2px solid rgb(170, 112, 25); */
-   margin-bottom: 20px;
-}
-.box{
-    border-radius: 4px;
-    background-color:#151728 ;
-}
-/*barra de pesquisa*/
-.search-box{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50,-50);
-    height: 40px;
-    padding: 10px;
-    border-radius: 40px;
-    display: flex;  
-    border-radius: 50%; 
-}
-input{
-     outline: none;
-     height: 100%;
-     width: 100%;
-     display: block;
-     border: none;
-     padding: 0 54px;
-     background-size: 16px;
-     background-position: 25px 50%;
-     color: rgb(255, 255, 255);
-     font-weight: 600;
-     background-color: transparent;
-     margin-top: 10px;
- }
-.search-bar {
-    margin-top: 20PX;
-    margin-bottom: 20px;
-    height: 60px;
-    z-index: 3;
-    position: relative; 
-    display: flex;
-    box-shadow: 0 0 10px #6C63FF;
-    display: flex;
-    align-items: center;
-}
-.right-side-button{
-    position: relative;
-    right: 10px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-}
-.lupa{
-   padding-bottom: 1px;
-}
-.usuario{
-    margin-bottom: 8px;
-}
-/*css do botão*/
-.right-side-button{
-    background-color: transparent;
-    border: none;
-    margin-top: 10px;
-}
-header{
- flex-basis: 20%;
-}
-.logo_header figcaption{
- display: none;
-}
-.menuItem{
-    margin-bottom:25px ;
-}
-.menuItem img{
-    max-width: 26 px;
-}
-.menuItem a{
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
-    vertical-align: top;
-}
-/*principal*/
-main{
-flex-basis: 70%;
-}
-.tituloMain{
-    padding: 10px 30px;
-}
-form{
-padding: 10px 30px;
-border-top: 1px solid black;
-border-bottom: 20px solid black;
-text-align: right;
-}
-form textarea{
-    display: block;
-    width: 100%;
-    border: none;
-    outline: none;
-    resize: none;
-    height: 55px;
-}
-hr{
-    background-color: transparent;
-}
-.attach-img{
-    display: block;
-}
+/* div publicar */
 .status-box{
     background-color: #151728;
     border-radius: 4px;
     padding: 3%;
 
 }
-/* .intro{
-    padding: 20px;
-} */
-/* .intro-title{
-    font-family:'Source Sans Pro', sans-serif ;
-    color: white;
-    font-weight: 600;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-} */
-/* .intro-menu{
-    background-color: #8f98a9;
-    box-shadow: -8px 0 0 0 #8f98a9, 8px 0 0 0 #8f98a9;
-    width: 5px;
-    height: 5px;
-    border: 0;
-    padding: 0;
-    border-radius: 50%;
-    margin-left: auto;
-    margin-right: 8px;
-    margin-bottom: auto;
-    margin-top: 5px;
-} */
-.info{
-    font-size: 15px;
-}
-.info-item{
-    margin: 10px;
-    display: flex;
-    color: #c3c5d5;
-    padding-top: 0%;
-}
-.info-item a {
-    color: #01F1FE;
-    text-decoration: none;
-    margin-left: 5px;
-}
-.item svg{
-    width: 16px;
-    margin-right: 10px;
-}
-.icon-info{
-   margin-right: 8px;
-}
-form button{
-    background-color: #01F1FE;
-    border: none;
-    color: white;
-    padding: 8px 2px;
-    border-radius: 5px;
-}
 
-.album {
-    padding-top: 20px;
-    margin-top: 20px;
-     border: none;
-     display: flex;
-     margin-bottom: auto;
-     margin-top: 5px;
-    background-color: transparent;
-   }
+/* imagem no post */
 .album-photo {
     width: 100%;
     object-fit: cover;
@@ -276,24 +162,37 @@ form button{
     margin-right: 50px;
     justify-content: center;
 }
+
+/* div do post */
+.post-feed{
+    margin-bottom: 20px;
+}
+
+/* ul do post */
 .listPost{
-    padding-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: #151728;
     color: white;
     border-radius: 5px;
-    /* margin-bottom: 20px; */
 }
+/* li do post */
 .post{
     padding:20px 5px;
     display: flex;
     align-items: flex-start;
 }
 
-.text-post{
-    font-size: 15px;
-    
+/* @ do usuario */
+.usuario{
+    margin-bottom: 8px;
 }
 
+.text-post{
+    font-size: 15px;
+}
+
+/* div do post dentro da li */
 .post_info{
    margin-left: 15px; 
 }
@@ -308,8 +207,5 @@ form button{
     margin-top: 15px;
 }
 
-.post-feed{
-    margin-bottom: 20px;
-    /* border: 1px solid rgb(36, 155, 224) */
-}
+
 
