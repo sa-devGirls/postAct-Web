@@ -80,6 +80,7 @@ input{
 
 /* li do publicar */
 .publish{
+    padding: 15px 5px;
     display: flex;
     align-items: flex-start;
 }
@@ -90,21 +91,28 @@ input{
     height: 50px;
     object-fit: cover;
     border-radius: 50%;
-    margin-bottom: 100px;
-    border: #00FF00 2px solid;
-    
+    margin-bottom: 100px;    
+}
+
+.ftPerfil{
+    border-radius: 50%;
+    width: 50px;
 }
 /* escreva ou suba uma foto */
 .status-textarea{
-    width: 100%;
+    width: 80%;
     outline: none;
     flex-grow: 1;
     background-color: transparent;
     border: transparent;
     resize: none;
-    margin-top: 15px;
+    margin-top: 5px;
+    margin-right: 5px;
     color: white;
     padding: 10px;
+    font-size: 15px;
+    margin-left: 15px;
+
 }
 
 /* botao publicar */
@@ -125,12 +133,50 @@ input{
     margin-top: 100px;
 }
 
-/* div publicar */
-.status-box{
-    background-color: #151728;
-    border-radius: 4px;
-    padding: 3%;
 
+
+/* div do post */
+.post-feed{
+    margin-bottom: 20px;
+}
+
+/* ul do post */
+.listPost{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #151728;
+    color: white;
+    border-radius: 5px;
+}
+/* li do post */
+.post{
+    padding: 15px 5px;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* @ do usuario */
+.usuario{
+    margin-bottom: 8px;
+}
+
+.text-post{
+    font-size: 15px;
+}
+
+/* div do post dentro da li */
+.post_info{
+   margin-left: 15px; 
+}
+.post_info h2{
+    display: inline-block;
+}
+.post_info span{
+    display: inline-block;
+    color: rgb(150, 150, 150);
+}
+.post_info p{
+    margin-top: 15px;
 }
 
 /* imagem no post */
@@ -161,50 +207,6 @@ input{
     max-height: 30vh;
     margin-right: 50px;
     justify-content: center;
-}
-
-/* div do post */
-.post-feed{
-    margin-bottom: 20px;
-}
-
-/* ul do post */
-.listPost{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: #151728;
-    color: white;
-    border-radius: 5px;
-}
-/* li do post */
-.post{
-    padding:20px 5px;
-    display: flex;
-    align-items: flex-start;
-}
-
-/* @ do usuario */
-.usuario{
-    margin-bottom: 8px;
-}
-
-.text-post{
-    font-size: 15px;
-}
-
-/* div do post dentro da li */
-.post_info{
-   margin-left: 15px; 
-}
-.post_info h2{
-    display: inline-block;
-}
-.post_info span{
-    display: inline-block;
-    color: rgb(150, 150, 150);
-}
-.post_info p{
-    margin-top: 15px;
 }
 
 
