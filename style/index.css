@@ -27,13 +27,12 @@ body{
     border-radius: 20px;
 } */
 .status-img{
-    position: absolute;
     width: 50px;
     height: 50px;
     object-fit: cover;
     border-radius: 50%;
-    margin-bottom: 0;
-    /* border: #00FF00 2px solid; */
+    margin-bottom: 100px;
+    border: #00FF00 2px solid;
     
 }
 .status-textarea{
@@ -57,11 +56,13 @@ body{
     height: 27px;
     background-color: #6C63FF;
     color: white;
+    margin-top: 100px;
     /* border: solid 2px #0000FF; */
 }
 .attach-img{
     width: 30px;
     margin-right: 10px;
+    margin-top: 100px;
     /* border: solid 2px #0000FF; */
 
 }
@@ -179,11 +180,9 @@ hr{
     display: block;
 }
 .status-box{
-    position: relative;
     background-color: #151728;
     border-radius: 4px;
     padding: 3%;
-    border: 2px solid red;
 
 }
 /* .intro{
