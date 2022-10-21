@@ -6,113 +6,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link rel="stylesheet" href="style/reset.css">
-    <link rel="stylesheet" href="style/perfil.css">
+    <link rel="stylesheet" href="style/teste.css">
     <link rel="stylesheet" href="style/menu.css">
     <title>Home</title>
 </head>
-<body>
+<body>    
+  <header>
+      <img class="capa" src="https://images.unsplash.com/photo-1508179719682-dbc62681c355?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80"  alt="" width="100%">
+    <div class="perfil">
+      <img class="ftPerfil" src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" class="status-img" alt="ftPerfil" width="28px">                      
+    </div>
+    </header>
   <div class="container">
     <header>
 
-        <div class="sidebar">
-          <div class="logoContent">
-              <div class="logo">
-                  <i class='bx bxl-nodejs'></i>
-                  <div class="logoName">PostAct</div>
-              </div>
-              <!-- logo -->
-              <i class='bx bx-menu' id="btn"></i>
-          </div>
-          <!-- logoContent -->
-          <ul class="nav_list">
+      <div class="sidebar">
+        <div class="logoContent">
+            
+         <li class="logoContent">
+            <a href="#">
+              <img id="logo" src="img/logo.png" alt="logo" width="43px">
+            </a>
+         </li>
+        <ul class="nav_list">
             <li>
-              <a href="#">
-                <img id="logo" src="img/logo.png" alt="" width="43px">
-              </a>
-           </li>
-              <li>
-                  <a href="#">
-                   <!-- <box-icon name="rocket">
-                      <i class='bx bx-grid-alt' ></i>
-                    </box-icon>-->
-                    <img src="img/menu.png" alt="" width="33px" height="33px">
-                      <span class="links_name">Início</span>
-                      <span class="toolipe">Início</span>
-                  </a>
-              </li>
+                <a href="index.html">
+                  <img src="img/menu.png" alt="inicio" width="33px" height="33px">
+                    <span class="links_name">Início</span>
+                    <span class="toolipe">Início</span>
+                </a>
+            </li>
 
-              <li>
-                  <a href="#">
-                    <img src="img/lupa (1).png" alt="" width="28px">
-                      <span class="links_name">Procurar</span>
-                      <span class="toolipe">Procurar</span>
-                  </a>
-              </li>
-              
-              <li>
-                  <a href="#">
-                    <img src="img/engrenagem.png" alt="" width="28px">
-                      <span class="links_name">Configurações</span>
-                      <span class="toolipe">Configurações</span>
-                  </a>
-              </li> 
-
-              <li>
-                <a href="perfil.html">
-                  <img src="img/perfil.png" alt="" width="28px">
-                    <span class="links_name">Perfil</span>
-                    <span class="toolipe">Perfil</span>
+            <li>
+                <a href="#">
+                  <img src="img/lupa (1).png" alt="lupa" width="28px">
+                    <span class="links_name">Procurar</span>
+                    <span class="toolipe">Procurar</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <img src="img/engrenagem.png" alt="configurações" width="28px">
+                    <span class="links_name">Configurações</span>
+                    <span class="toolipe">Configurações</span>
                 </a>
             </li> 
-
-          </ul>
-          <!-- nav_list -->
-          <div class="profileContent">
-              <div class="profile">
-                  <div class="profileDetail">
-                      <img src="./img/brunosalmito.png">
-                      <div class="name_job">
-                          <div class="name">Bruno Salmito</div>
-                          <div class="job">Web Developer</div>
-                      </div>
-                  </div>
-                  <!-- profileDetail -->
-                  <i class='bx bx-log-out' id="logout" ></i>
-              </div>
-          </div>
+            <li>
+              <a href="perfil.html">
+                <img src="img/perfil.png" alt="Perfil" width="28px">
+                  <span class="links_name">Perfil</span>
+                  <span class="toolipe">Perfil</span>
+              </a>
+          </li> 
+        </ul>  
+        </div>
       </div>
-    </header>
+  </header>
+
     <main>
-          <!--Sobre-->
-        <section class="sobre">
-           <div class="album box"> 
-           </div>
-             <ul class="listSobre">
-                <li class="post">
-                    <div class="post_info">
-                            <h2>Sobre</h2>
-                            <span>Comovidvndidvdvd</span>
-                        </div>
-                    </div>
-                </li>
-              </ul>
-            <div class="post-feed">
-              <ul class="list">
-                <li class="post">
-                  <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" class="status-img" alt="ftPerfil" width="28px" alt="">
-                  <div class="post_info">
-                    <h2>Nome usuário</h2>
-                    <span class="usuario">@nomeUsuario</span>
-                    <div class="album-content">Legenda
-                      <div class="album-photos">
-                        <img src="https://images.unsplash.com/photo-1508179719682-dbc62681c355?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80" class="album-photo" alt="">
+        <section class="feed">
+            <div class="post">
+                <div class="post-feed">
+                    <ul class="pub">
+                      <li class="post">
+                          <div class="post_info">
+                            <div class="tittle">
+                              <h2>Sobre</h2>
+                            </div>
+                              <p>Sobre o usuário</p>
+                          </div>
+                      </li>
+                  </ul>
+             <div class="post">
+                <ul class="listPost">
+                  <li class="post">
+                      <img class="ftPerfil" src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" class="status-img" alt="ftPerfil" width="28px">                      
+                      <div class="post_info">
+                        <h2>Nome usuário</h2>
+                        <span class="usuario">@nomeUsuario</span>
+                            <div class="album-content">When the bass drops, so do my problems.
+                                <div class="album-photos">
+                                  <img src="https://images.unsplash.com/photo-1508179719682-dbc62681c355?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80" class="album-photo"/>
+                                </div>
+                            </div>
                       </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
+                    </li>
+                </ul>
+                <ul class="listPost">
+                    <li class="post">
+                        <img class="ftPerfil" src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" class="status-img" alt="ftPerfil" width="28px">                      
+                        <div class="post_info">
+                          <h2>Nome usuário</h2>
+                          <span class="usuario">@nomeUsuario</span>
+                              <div class="album-content">When the bass drops, so do my problems.
+                                  <div class="album-photos">
+                                    <img src="https://images.unsplash.com/photo-1508179719682-dbc62681c355?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80" class="album-photo"/>
+                                  </div>
+                              </div>
+                        </div>
+                      </li>
+                  </ul>
+                  <ul class="listPost">
+                    <li class="post">
+                        <img class="ftPerfil" src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" class="status-img" alt="ftPerfil" width="28px">                      
+                        <div class="post_info">
+                          <h2>Nome usuário</h2>
+                          <span class="usuario">@nomeUsuario</span>
+                              <div class="album-content">When the bass drops, so do my problems.
+                                  <div class="album-photos">
+                                    <img src="https://images.unsplash.com/photo-1508179719682-dbc62681c355?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80" class="album-photo"/>
+                                  </div>
+                              </div>
+                        </div>
+                      </li>
+                  </ul>
+                </div>
             </div>
         </section>
+    </div>  
     </main>
 </body>
 </div>
