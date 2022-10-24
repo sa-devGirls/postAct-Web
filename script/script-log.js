@@ -28,3 +28,17 @@ signInButton.addEventListener('click', () => {
 	container.classList.remove("right-panel-active");
 });
 
+
+function validateFields(){
+    const email = document.getElementById('email').value
+
+    if (!email){
+        document.getElementById('btn2').disabled = true
+    } else if (validateEmail(email)){
+        document.getElementById('btn2').disabled = false
+    }
+
+    function validateEmail(email){
+        return /\S+@\S+\.\S+/.test(email)
+    }
+}

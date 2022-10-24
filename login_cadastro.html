@@ -26,13 +26,11 @@
         <div class="form-container sign-in-container">
             <form action="#">
                 <h1>Faça seu login</h1>
-                <input type="email" placeholder="Email">
+                <input type="email" placeholder="Email" onchange="validateFields()" id="email">
                 <input type="password" placeholder="Senha">
 
-                <!-- Acrescentar link do "esqueci minha senha" -->
                 <a href="recuperar-senha.html">Esqueceu sua senha?</a>
-                <!-- Acrecentar link do "index" -->
-                <input type="button" value="Entrar" id="btn2" class="btn">                
+                <input type="button" value="Entrar" id="btn2" class="btn" disabled="true">                
             </form>
         </div>
 
