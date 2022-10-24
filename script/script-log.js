@@ -31,9 +31,8 @@ signInButton.addEventListener('click', () => {
 
 //validação de campos
 function validateFields(){
-    const emailValid = isEmailValid()
-    const passwordValid = isPasswordValid()
-    document.getElementById('btn2').disabled = !emailValid || !passwordValid
+    toogleButtonsDisable()
+    toogleEmailErrors()
 }
 
 function isEmailValid(){
@@ -44,13 +43,26 @@ function isEmailValid(){
     return validateEmail(email)
 }
 
+function toogleEmailErrors(){
+    const email = document.getElementById('email').value
+    if(!email){
+        document.getElementById('email-required-error').style.display = 'block'
+    }
+}
+
+function toogleButtonsDisable(){
+    const emailValid = isEmailValid()
+    const passwordValid = isPasswordValid()
+    document.getElementById('btn2').disabled = !emailValid || !passwordValid
+}
+
 function isPasswordValid(){
     const password = document.getElementById('password').value
     if (!password){
         return false
-    } else {
-        return true
-    }
+    } 
+    return true
+    
 }
 
 function validateEmail(email){

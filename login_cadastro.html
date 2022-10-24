@@ -27,8 +27,10 @@
             <form action="#">
                 <h1>Faça seu login</h1>
                 <input type="email" placeholder="Email" onchange="validateFields()" id="email">
+                <div class="errorFields" id="email-required-error">Preencha o campo!</div>
+                <div class="errorFields">Preencha corretamente o campo!</div>
                 <input type="password" placeholder="Senha" id="password" onchange="validateFields()">
-
+                <div class="errorFields">Preencha o campo!</div>
                 <a href="recuperar-senha.html">Esqueceu sua senha?</a>
                 <input type="button" value="Entrar" id="btn2" class="btn" disabled="true">                
             </form>
