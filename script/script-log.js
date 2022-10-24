@@ -30,15 +30,19 @@ signInButton.addEventListener('click', () => {
 
 
 function validateFields(){
+    const emailValid = isEmailValid()
+    document.getElementById('btn2').disabled = !emailValid
+}
+
+function isEmailValid(){
     const email = document.getElementById('email').value
-
     if (!email){
-        document.getElementById('btn2').disabled = true
-    } else if (validateEmail(email)){
-        document.getElementById('btn2').disabled = false
+        return false
     }
+    return validateEmail(email)
+}
 
-    function validateEmail(email){
-        return /\S+@\S+\.\S+/.test(email)
-    }
+
+function validateEmail(email){
+    return /\S+@\S+\.\S+/.test(email)
 }
