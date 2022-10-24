@@ -29,9 +29,11 @@ signInButton.addEventListener('click', () => {
 });
 
 
+//validação de campos
 function validateFields(){
     const emailValid = isEmailValid()
-    document.getElementById('btn2').disabled = !emailValid
+    const passwordValid = isPasswordValid()
+    document.getElementById('btn2').disabled = !emailValid || !passwordValid
 }
 
 function isEmailValid(){
@@ -42,6 +44,14 @@ function isEmailValid(){
     return validateEmail(email)
 }
 
+function isPasswordValid(){
+    const password = document.getElementById('password').value
+    if (!password){
+        return false
+    } else {
+        return true
+    }
+}
 
 function validateEmail(email){
     return /\S+@\S+\.\S+/.test(email)
