@@ -212,5 +212,22 @@ main{
 .coments{
     display: inline-block;
 }
+/*comentario*/
+#check{
+    display: none;
+}
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    color: wheat;
+    transition: all .5s ease;
+}
+label #cancel{
+    opacity: 0;
+    visibility: hidden;
+}
+#check:checked ~ .coments{
+    
+}
 
 
