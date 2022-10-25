@@ -276,8 +276,11 @@ form button{
 }
 .perfil{
     display: block;
-    padding-left: 60px;
-    align-items: flex-end;
+    
+}
+.ftPerfil{
+    border-radius: 50%;
+    width: 50px;
 }
 @media (max-width:550px){.post
     {
