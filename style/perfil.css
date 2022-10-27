@@ -289,3 +289,18 @@ form button{
     transition: 5s ease;
     }
 }
+
+.tittle-about-me{
+    font-size: 35px;
+    text-align: center;
+}
+
+.ftPerfil-edit{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 242px;
+    top: 215px;
+    border-radius: 50%;
+}
+
