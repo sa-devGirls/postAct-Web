@@ -155,6 +155,7 @@ main{
 
 .text-post{
     font-size: 15px;
+    margin-bottom: 20px;
 }
 
 /* div do post dentro da li */
@@ -196,7 +197,6 @@ main{
 }
 .album-photos {
     display: flex;
-    margin-top: 20px;
     max-height: 30vh;
     margin-right: 50px;
     justify-content: center;
@@ -206,7 +206,6 @@ main{
 .favorite{
     display: inline-block;
     margin-right: 8px;
-
 }
 
 .coments{
