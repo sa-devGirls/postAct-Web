@@ -43,19 +43,7 @@
     font-weight: 400;
 }
 
-.sidebar .bx-menu {
-    position: absolute;
-    top: 6px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    font-size: 30px;
-    cursor: pointer;
-    color: #fff;
-}
+
 .logoContent{
     margin-bottom: 50px;
 }
@@ -98,64 +86,6 @@
     white-space: nowrap;
     transition: all 0.5s ease;
 }
-
-/*.sidebar ul li a:hover {
-    color: #6054dd;
-    background-color: transparent;
-}*/
-
-/*.sidebar ul li i {
-    min-width: 50px;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 12px;
-    text-align: center;
-}*/
-
-.sidebar .profileContent .profile .profileDetail {
-    display: flex;
-    align-items: center;
-    pointer-events: none;
-    white-space: nowrap;
-    opacity: 0;
-    pointer-events: none;
-}
-
-.sidebar .profileContent .profile .profileDetail img {
-    width: 45px;
-    height: 45px;
-    object-fit: cover;
-    background-color: #151728;;
-    border-radius: 12px;
-}
-
-.sidebar .profileContent .profile .profileDetail .name_job {
-    margin-left: 15px;
-}
-
-.profile .profileDetail .name_job .name {
-    font-size: 15px;
-    font-weight: 400;
-
-}
-
-.profile .profileDetail .name_job .job {
-    font-size: 12px;
-}
-
-.profile #logout {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    bottom: 8px;
-    min-width: 50px;
-    line-height: 50px;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 12px;
-
-}
 /* toolipe */
 .toolipe {
     position: absolute;
@@ -165,7 +95,7 @@
     width: 100px;
     height: 35px;
 	border: 2px solid;
-	background-color: transparent;
+	background-color: #151728;
 	border-image: linear-gradient(to right, #6967ff, #01F1FE);
 	border-image-slice: 1;
     outline: none;
@@ -217,5 +147,17 @@
 .sidebar.active .toolipe {
     display: none;
 }
+
+.logoContent{
+    text-decoration: none;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.logoutContent{
+    display: inline-block;
+    margin-top: 360px;
+}
+
 
 
