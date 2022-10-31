@@ -120,6 +120,7 @@ main{
     color: white;
     margin-top: 100px;
     margin-right: 10px;
+    cursor: pointer;
 }
 /* botão anexar */
 .attach-img{
@@ -130,9 +131,11 @@ main{
 
 /* div do post */
 .post-feed{
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
-
+.container{
+    
+}
 /* ul do post */
 .listPost{
     padding-top: 5px;
@@ -228,5 +231,34 @@ label #cancel{
 #check:checked ~ .coments{
     
 }
+.coment{
+   display: block;
+   outline: none;
+   height: 60px;
+   width: 500px;
+   color: rgb(255, 255, 255);
+   background-color: transparent;  
+   position: relative; 
+   border: 2px solid #6C63FF;
+   border-radius: 10px;
+   align-items: center;
+   padding: 8px;
 
-
+}
+.publish-b{
+    display: inline-block;
+    ;
+    cursor: pointer;
+    border: transparent;
+    box-shadow: 0 0 10px #6C63FF;
+    border-radius: 7px;
+    width: 88px;
+    height: 27px;
+    background-color: #6C63FF;
+    color: white;
+}
+@media (max-width:700px){.coment
+    {
+   width: 100%;
+    }
+}
