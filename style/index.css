@@ -76,8 +76,16 @@ main{
 .publish{
     padding: 15px 5px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
 }
+/*.publish{
+    padding: 15px 5px;
+    display: flex;
+   align-items: flex-start;
+}*/
 
 /* foto de perfil */
 .status-img{
@@ -232,10 +240,10 @@ label #cancel{
     
 }
 .coment{
-   display: block;
+   display: flex;
    outline: none;
    height: 60px;
-   width: 500px;
+   width: 600px;
    color: rgb(255, 255, 255);
    background-color: transparent;  
    position: relative; 
@@ -243,22 +251,28 @@ label #cancel{
    border-radius: 10px;
    align-items: center;
    padding: 8px;
-
+   
 }
 .publish-b{
     display: inline-block;
-    ;
     cursor: pointer;
     border: transparent;
     box-shadow: 0 0 10px #6C63FF;
-    border-radius: 7px;
+    border-radius: 10px;
     width: 88px;
-    height: 27px;
+    height: 50px;
     background-color: #6C63FF;
     color: white;
 }
-@media (max-width:700px){.coment
+@media (max-width:800px){.coment
     {
    width: 100%;
     }
+}
+.coment-itens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
 }
