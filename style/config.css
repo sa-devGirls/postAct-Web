@@ -1,0 +1,112 @@
+body{
+    background-color:  #11101d;
+
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+header{
+    flex-basis: 20%;
+   }
+   
+main{
+   flex-basis: 70%;
+   }
+/* foto de perfil */
+.status-img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 100px;    
+}
+
+.ftPerfil{
+    border-radius: 50%;
+    width: 50px;
+}
+
+/* div do post */
+.post-feed{
+    margin-top: 20px;
+}
+
+/* ul do post */
+.listPost{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #151728;
+    color: white;
+    border-radius: 5px;
+}
+/* li do post */
+.post{
+    padding: 15px 5px;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* @ do usuario */
+.usuario{
+    margin-bottom: 8px;
+}
+
+.text-post{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+/* div do post dentro da li */
+.post_info{
+   margin-left: 15px; 
+}
+.post_info h2{
+    display: inline-block;
+}
+.post_info span{
+    display: inline-block;
+    color: rgb(150, 150, 150);
+}
+.post_info p{
+    margin-top: 15px;
+}
+
+/* imagem no post */
+.album-photo {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4px;
+    margin-top: 0px;
+}
+
+.publish-b{
+    display: inline-block;
+    cursor: pointer;
+    border: transparent;
+    box-shadow: 0 0 10px #6C63FF;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 88px;
+    height: 60px;
+    background-color: #6C63FF;
+    color: white;
+}
+
+.list{
+    color: white;
+    font-size: 24px;
+}
+.buttom-add{
+    width: 170px;
+    height: 25px;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    background-color:  #151728;
+}
