@@ -16,6 +16,7 @@ header{
 main{
    flex-basis: 70%;
    }
+   
 /* foto de perfil */
 .status-img{
     width: 50px;
@@ -58,32 +59,36 @@ main{
 .text-post{
     font-size: 15px;
     margin-bottom: 20px;
+    
 }
+.info{
+    display: block;
+    color: rgb(150, 150, 150);
+    margin-top: 20px;
+    border-top: 1px solid gray;
+}
+.text-info{
 
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+label{
+    width: 600px;
+}
 /* div do post dentro da li */
-.post_info{
+.config_info{
    margin-left: 15px; 
 }
-.post_info h2{
+.config_info h2{
     display: inline-block;
 }
-.post_info span{
+.config_info span{
     display: inline-block;
     color: rgb(150, 150, 150);
 }
-.post_info p{
+.config_info p{
     margin-top: 15px;
 }
-
-/* imagem no post */
-.album-photo {
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 4px;
-    margin-top: 0px;
-}
-
 .publish-b{
     display: inline-block;
     cursor: pointer;
