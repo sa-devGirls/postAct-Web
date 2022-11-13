@@ -17,11 +17,11 @@
 
                 <input type="text" placeholder="Usuário" class="required" oninput="nameValidate()">
                 <span class="span-required">O nome de usuário deve ter no mínimo 3 caracteres</span>
-                <input type="email" placeholder="Email" class="required" oninput="emailValidate()">
+                <input type="email" placeholder="Email" id="email" class="required" oninput="emailValidate()" onchange="validateFields()">
                 <span class="span-required">Digite um email válido</span>
                 <input type="password" placeholder="Senha" class="required" oninput="mainPasswordValidate()">
                 <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
-                <input type="button" value="Cadastrar" id="btn" class="btn">
+                <input type="button" value="Cadastrar" id="btn" class="btn" onclick="register()" disabled="true">
             </form>
         </div>
 
@@ -29,10 +29,10 @@
         <div class="form-container sign-in-container">
             <form action="#">
                 <h1>Faça seu login</h1>
-                <input type="email" placeholder="Email" id="email" class="required">
+                <input type="email" placeholder="Email" class="required">
                 <input type="password" placeholder="Senha" id="password" class="required">
                 <a href="recuperar-senha.html">Esqueceu sua senha?</a>
-                <input type="button" value="Entrar" id="btn2" class="btn" disabled="true">                
+                <input type="button" value="Entrar" id="btn2" class="btn" disabled="true" onclick="login()">                
             </form>
         </div>
 
