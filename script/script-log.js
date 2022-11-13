@@ -15,6 +15,7 @@ signInButton.addEventListener('click', () => {
 const form = document.getElementById('form')
 const campos = document.querySelectorAll('.required')
 const spans = document.querySelectorAll('.span-required')
+const spansNull = document.querySelectorAll('.spans-null')
 const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
 
 
@@ -31,24 +32,34 @@ const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]
 // })
 
 
-function validateFields(){
-    const emailValid = isEmailValid()
-    document.getElementById('btn').disabled = !emailValid
-}
+// function validateFields(){
+//     const emailValid = emailValidate()
+//     document.getElementById('btn').disabled = emailValid
+// }
 
+function register(){
+    if(nameValidate() && emailValidate() && mainPasswordValidate()){
+        window.location.href = "index.html"
+    }
+}
 
 btn.addEventListener('click', (event) =>{
     event.preventDefault()
     nameValidate()
     emailValidate()
     mainPasswordValidate()
-
-
 })
+
+function nullField(login_cadastro){
+    campos[login_cadastro].style.border = '2px solid #e63636'
+    spansNull[login_cadastro].style.display = 'block'
+    spans[login_cadastro].style.display = 'none'
+}
 
 function setEror(login_cadastro){
     campos[login_cadastro].style.border = '2px solid #e63636'
     spans[login_cadastro].style.display = 'block'
+    spansNull[login_cadastro].style.display = 'none'
 }
 
 function removeError(login_cadastro){
@@ -57,10 +68,17 @@ function removeError(login_cadastro){
 }
 
 function nameValidate(){
-    if(campos[0].value.length < 3){
+    const usuario = document.getElementById('usuario').value
+
+    if(!usuario){
+        nullField(0)
+        return false
+    }else if(campos[0].value.length < 3){
         setEror(0)
+        return false
     }else{
         removeError(0)
+        return true
     }
 }
 
@@ -68,29 +86,34 @@ function emailValidate(){
     const email = document.getElementById('email').value
 
     if(!email){
-        console.log('campo vazio')
-        return true
+        nullField(1)
+        return false
     }else if(!emailRegex.test(campos[1].value)){
         setEror(1)
-        return true  
+        return false 
     }else{
         removeError(1)
-        return false 
+        return true 
     }
 }
 
 function mainPasswordValidate(){
-    if(campos[2].value.length < 8){
+    const password = document.getElementById('password').value
+
+    if(!password){
+        nullField(2)
+        return false
+    }else if(campos[2].value.length < 8){
         setEror(2)
+        return false
     }else{
         removeError(2)
+        return true
     }
 }
 
 
-// function register(){
-//     window.location.href = "index.html"
-// }
+
 
 
 // function login(){

@@ -15,13 +15,16 @@
             <form id="form" action="#">
                 <h1>Criar uma conta</h1>
 
-                <input type="text" placeholder="Usuário" class="required" oninput="nameValidate()">
+                <input type="text" placeholder="Usuário" id="usuario" class="required" oninput="nameValidate()">
                 <span class="span-required">O nome de usuário deve ter no mínimo 3 caracteres</span>
+                <span class="spans-null">Preencha este campo</span>
                 <input type="email" placeholder="Email" id="email" class="required" oninput="emailValidate()" onchange="validateFields()">
                 <span class="span-required">Digite um email válido</span>
-                <input type="password" placeholder="Senha" class="required" oninput="mainPasswordValidate()">
+                <span class="spans-null">Preencha este campo</span>
+                <input type="password" placeholder="Senha" id="password" class="required" oninput="mainPasswordValidate()">
                 <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
-                <input type="button" value="Cadastrar" id="btn" class="btn" onclick="register()" disabled="true">
+                <span class="spans-null">Preencha este campo</span>
+                <input type="button" value="Cadastrar" id="btn" class="btn"  onclick="register()">
             </form>
         </div>
 

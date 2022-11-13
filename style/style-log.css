@@ -250,3 +250,13 @@ input:focus {
 	display: none;
 }
 
+.spans-null{
+	font-size: 10px;
+	font-weight: bold;
+	margin: 0 0 0 0;
+	color: #e63636;
+	text-align: left;
+	width: 96%;
+	display: none;
+}
+
