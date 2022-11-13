@@ -12,12 +12,15 @@
     <div class="container" id="container">
         <!-- Formulário do cadastro -->
         <div class="form-container sign-up-container">
-            <form action="#">
+            <form id="form" action="#">
                 <h1>Criar uma conta</h1>
 
-                <input type="text" placeholder="Usuário">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Senha">
+                <input type="text" placeholder="Usuário" class="required" oninput="nameValidate()">
+                <span class="span-required">O nome de usuário deve ter no mínimo 3 caracteres</span>
+                <input type="email" placeholder="Email" class="required" oninput="emailValidate()">
+                <span class="span-required">Digite um email válido</span>
+                <input type="password" placeholder="Senha" class="required" oninput="mainPasswordValidate()">
+                <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
                 <input type="button" value="Cadastrar" id="btn" class="btn">
             </form>
         </div>
@@ -26,11 +29,8 @@
         <div class="form-container sign-in-container">
             <form action="#">
                 <h1>Faça seu login</h1>
-                <input type="email" placeholder="Email" onchange="validateFields()" id="email">
-                <div class="errorFields" id="email-required-error">Preencha o campo!</div>
-                <div class="errorFields">Preencha corretamente o campo!</div>
-                <input type="password" placeholder="Senha" id="password" onchange="validateFields()">
-                <div class="errorFields">Preencha o campo!</div>
+                <input type="email" placeholder="Email" id="email" class="required">
+                <input type="password" placeholder="Senha" id="password" class="required">
                 <a href="recuperar-senha.html">Esqueceu sua senha?</a>
                 <input type="button" value="Entrar" id="btn2" class="btn" disabled="true">                
             </form>
