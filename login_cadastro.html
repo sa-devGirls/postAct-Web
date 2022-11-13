@@ -18,10 +18,10 @@
                 <input type="text" placeholder="Usuário" id="user" class="required" oninput="userValidate()">
                 <span class="span-required">O nome de usuário deve ter no mínimo 3 caracteres</span>
                 <span class="spans-null">Preencha este campo</span>
-                <input type="email" placeholder="Email" id="email" class="required" oninput="emailValidate()" onchange="validateFields()">
+                <input type="email" placeholder="Email" id="email" class="required" oninput="emailValidate()">
                 <span class="span-required">Digite um email válido</span>
                 <span class="spans-null">Preencha este campo</span>
-                <input type="password" placeholder="Senha" id="password" class="required" oninput="mainPasswordValidate()">
+                <input type="password" placeholder="Senha" id="password" class="required" autocomplete="on" oninput="mainPasswordValidate()">
                 <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
                 <span class="spans-null">Preencha este campo</span>
                 <input type="button" value="Cadastrar" id="btn" class="btn"  onclick="register()">
@@ -33,7 +33,7 @@
             <form action="#">
                 <h1>Faça seu login</h1>
                 <input type="email" placeholder="Email" class="required">
-                <input type="password" placeholder="Senha" id="password" class="required">
+                <input type="password" placeholder="Senha" class="required" autocomplete="on">
                 <a href="recuperar-senha.html">Esqueceu sua senha?</a>
                 <input type="button" value="Entrar" id="btn2" class="btn" disabled="true" onclick="login()">                
             </form>
