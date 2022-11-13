@@ -63,5 +63,30 @@
     </div>
 
     <script src="script/script-log.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-auth-compat.js"></script>
+
+    <script>
+        const firebaseConfig = {
+        apiKey: "AIzaSyDlB3U8WNF8KTqOE7Ugofpvo1-q1CLXtP4",
+        authDomain: "postact-efc3b.firebaseapp.com",
+        projectId: "postact-efc3b",
+        storageBucket: "postact-efc3b.appspot.com",
+        messagingSenderId: "658462391533",
+        appId: "1:658462391533:web:7c7fbaf16e6b6d584fe0e4",
+        measurementId: "G-0SV7KMTTCY"
+        }
+        firebase.initializeApp(firebaseConfig)
+
+        console.log('antes')
+        firebase.auth().signInWithEmailAndPassword("vitoria@gmail.com", "123456789").then(response => {
+            console.log('success', response)
+        }).catch(error => {
+            console.log('error', error)
+        })
+        console.log('depois')
+
+    </script>
+
 </body>
 </html>
