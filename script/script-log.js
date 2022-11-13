@@ -10,9 +10,6 @@ signInButton.addEventListener('click', () => {
 	container.classList.remove("right-panel-active")
 });
 
-
-
-const form = document.getElementById('form')
 const campos = document.querySelectorAll('.required')
 const spans = document.querySelectorAll('.span-required')
 const spansNull = document.querySelectorAll('.spans-null')
@@ -31,21 +28,15 @@ const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]
 //     openPag(url)
 // })
 
-
-// function validateFields(){
-//     const emailValid = emailValidate()
-//     document.getElementById('btn').disabled = emailValid
-// }
-
 function register(){
-    if(nameValidate() && emailValidate() && mainPasswordValidate()){
+    if(userValidate() && emailValidate() && mainPasswordValidate()){
         window.location.href = "index.html"
     }
 }
 
 btn.addEventListener('click', (event) =>{
     event.preventDefault()
-    nameValidate()
+    userValidate()
     emailValidate()
     mainPasswordValidate()
 })
@@ -67,10 +58,10 @@ function removeError(login_cadastro){
     spans[login_cadastro].style.display = 'none'
 }
 
-function nameValidate(){
-    const usuario = document.getElementById('usuario').value
+function userValidate(){
+    const user = forms.user().value
 
-    if(!usuario){
+    if(!user){
         nullField(0)
         return false
     }else if(campos[0].value.length < 3){
@@ -83,7 +74,7 @@ function nameValidate(){
 }
 
 function emailValidate(){
-    const email = document.getElementById('email').value
+    const email = forms.email().value
 
     if(!email){
         nullField(1)
@@ -98,7 +89,7 @@ function emailValidate(){
 }
 
 function mainPasswordValidate(){
-    const password = document.getElementById('password').value
+    const password = forms.password().value
 
     if(!password){
         nullField(2)
@@ -113,9 +104,8 @@ function mainPasswordValidate(){
 }
 
 
-
-
-
-// function login(){
-//     window.location.href = "index.html"
-// }
+const forms = {
+    user: () => document.getElementById('user'),
+    email: () => document.getElementById('email'),
+    password: () => document.getElementById('password'),
+}
