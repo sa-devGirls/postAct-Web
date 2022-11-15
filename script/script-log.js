@@ -32,21 +32,27 @@ function login(){
 }
 
 function register(){
-    if(userValidate() && emailValidate() && mainPasswordValidate()){
-        window.location.href = "index.html"
-    }
+    showLoading()
+
+    const email = forms.emailRegister().value
+    const password = forms.passwordRegister().value
+    firebase.auth().createUserWithEmailAndPassword(email, password).then(() => {
+        hideLoading()
+        if(userValidate() && emailValidate() && mainPasswordValidate()){
+            window.location.href = "index.html"
+        }
+    }).catch(error => {
+        hideLoading()
+        console.log('error', error)
+        getErrorMessage(error)
+    })
 }
 
-// function recoverPassword(){
-//     showLoading()
-//     firebase.auth().sendPasswordResetEmail(forms.emailLogin().value).then(() => {
-//         hideLoading()
-//         alert('Email enviado com sucesso')
-//     }).catch(error => {
-//         hideLoading()
-//         alert(error)
-//     })
-// }
+function getErrorMessage(error){
+    if(error.code == "auth/email-already-in-use"){
+        alert('O endereço de e-mail já está sendo usado por outra conta.')
+    }
+}
 
 btn.addEventListener('click', (event) =>{
     event.preventDefault()
