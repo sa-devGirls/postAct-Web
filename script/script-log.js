@@ -17,10 +17,13 @@ const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]
 const spanInvalid = document.getElementsByClassName('span-invalid')
 
 function login(){
+    showLoading()
     firebase.auth().signInWithEmailAndPassword(forms.emailLogin().value, forms.passwordLogin().value).then(response => {
+        hideLoading()
         console.log('success', response)
         window.location.href = "index.html"
     }).catch(error => {
+        hideLoading()
         console.log('error', error)
         campos[4].style.border = '2px solid #e63636'
         setEror(3)
