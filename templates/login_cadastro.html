@@ -18,10 +18,10 @@
                 <input type="text" placeholder="Usuário" id="user" class="required" oninput="userValidate()">
                 <span class="span-required">O nome de usuário deve ter no mínimo 3 caracteres</span>
                 <span class="spans-null">Preencha este campo</span>
-                <input type="email" placeholder="Email" id="email" class="required" oninput="emailValidate()">
+                <input type="email" placeholder="Email" id="emailRegister" class="required" oninput="emailValidate()">
                 <span class="span-required">Digite um email válido</span>
                 <span class="spans-null">Preencha este campo</span>
-                <input type="password" placeholder="Senha" id="password" class="required" autocomplete="on" oninput="mainPasswordValidate()">
+                <input type="password" placeholder="Senha" id="passwordRegister" class="required" autocomplete="on" oninput="mainPasswordValidate()">
                 <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
                 <span class="spans-null">Preencha este campo</span>
                 <input type="button" value="Cadastrar" id="btn" class="btn"  onclick="register()">
@@ -32,10 +32,11 @@
         <div class="form-container sign-in-container">
             <form action="#">
                 <h1>Faça seu login</h1>
-                <input type="email" placeholder="Email" class="required">
-                <input type="password" placeholder="Senha" class="required" autocomplete="on">
+                <input type="email" placeholder="Email" class="required" id="emailLogin">
+                <input type="password" placeholder="Senha" class="required" id="passwordLogin" autocomplete="on">
+                <span class="span-invalid">E-mail ou senha incorretos.</span>
                 <a href="recuperar-senha.html">Esqueceu sua senha?</a>
-                <input type="button" value="Entrar" id="btn2" class="btn" disabled="true" onclick="login()">                
+                <input type="button" value="Entrar" id="btn2" class="btn" onclick="login()">                
             </form>
         </div>
 
@@ -77,14 +78,6 @@
         measurementId: "G-0SV7KMTTCY"
         }
         firebase.initializeApp(firebaseConfig)
-
-        console.log('antes')
-        firebase.auth().signInWithEmailAndPassword("vitoria@gmail.com", "123456789").then(response => {
-            console.log('success', response)
-        }).catch(error => {
-            console.log('error', error)
-        })
-        console.log('depois')
 
     </script>
 

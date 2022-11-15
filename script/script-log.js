@@ -28,6 +28,16 @@ const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]
 //     openPag(url)
 // })
 
+function login(){
+    firebase.auth().signInWithEmailAndPassword(forms.emailRegister().value, forms.passwordRegister().value).then(response => {
+        console.log('success', response)
+            window.location.href = "index.html"
+    }).catch(error => {
+        console.log('error', error)
+    })
+
+}
+
 function register(){
     if(userValidate() && emailValidate() && mainPasswordValidate()){
         window.location.href = "index.html"
@@ -74,7 +84,7 @@ function userValidate(){
 }
 
 function emailValidate(){
-    const email = forms.email().value
+    const email = forms.emailRegister().value
 
     if(!email){
         nullField(1)
@@ -89,7 +99,7 @@ function emailValidate(){
 }
 
 function mainPasswordValidate(){
-    const password = forms.password().value
+    const password = forms.passwordRegister().value
 
     if(!password){
         nullField(2)
@@ -106,6 +116,8 @@ function mainPasswordValidate(){
 
 const forms = {
     user: () => document.getElementById('user'),
-    email: () => document.getElementById('email'),
-    password: () => document.getElementById('password'),
+    emailRegister: () => document.getElementById('emailRegister'),
+    passwordRegister: () => document.getElementById('passwordRegister'),
+    emailLogin: () => document.getElementById('emailLogin'),
+    passwordLogin: () => document.getElementById('passwordLogin')
 }
