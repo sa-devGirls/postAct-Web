@@ -14,28 +14,30 @@ const campos = document.querySelectorAll('.required')
 const spans = document.querySelectorAll('.span-required')
 const spansNull = document.querySelectorAll('.spans-null')
 const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
-
-
-// const url = "index.html"
-// const btn = document.getElementById('btn')
-
-// function openPag(url) {
-//     const novaJanela = window.open(url, '_self') //ou _blank para abrir em outra janela
-//     novaJanela.focus()
-// }
-
-// btn.addEventListener('click', () =>{
-//     openPag(url)
-// })
+const spanInvalid = document.getElementsByClassName('span-invalid')
 
 function login(){
-    firebase.auth().signInWithEmailAndPassword(forms.emailRegister().value, forms.passwordRegister().value).then(response => {
+    firebase.auth().signInWithEmailAndPassword(forms.emailLogin().value, forms.passwordLogin().value).then(response => {
         console.log('success', response)
-            window.location.href = "index.html"
+        window.location.href = "index.html"
     }).catch(error => {
         console.log('error', error)
+        getErrorMessage(error)
     })
 
+}
+
+function getErrorMessage(error){
+    if (error.code == "auth/wrong-password"){
+        campos[3].style.border = '2px solid #e63636'
+        campos[4].style.border = '2px solid #e63636'
+        spanInvalid[1].style.display = 'block'
+    }
+
+    if (error.code == "auth/invalid-email"){
+        campos[3].style.border = '2px solid #e63636'
+        spanInvalid[0].style.display = 'block'
+    }
 }
 
 function register(){
