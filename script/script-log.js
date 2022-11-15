@@ -79,9 +79,9 @@ function removeError(login_cadastro){
 }
 
 function userValidate(){
-    const user = forms.user().value
+    const username = forms.username().value
 
-    if(!user){
+    if(!username){
         nullField(0)
         return false
     }else if(campos[0].value.length < 3){
@@ -125,7 +125,7 @@ function mainPasswordValidate(){
 
 
 const forms = {
-    user: () => document.getElementById('user'),
+    username: () => document.getElementById('username'),
     emailRegister: () => document.getElementById('emailRegister'),
     passwordRegister: () => document.getElementById('passwordRegister'),
     emailLogin: () => document.getElementById('emailLogin'),
