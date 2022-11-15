@@ -22,22 +22,10 @@ function login(){
         window.location.href = "index.html"
     }).catch(error => {
         console.log('error', error)
-        getErrorMessage(error)
+        campos[4].style.border = '2px solid #e63636'
+        setEror(3)
     })
 
-}
-
-function getErrorMessage(error){
-    if (error.code == "auth/wrong-password"){
-        campos[3].style.border = '2px solid #e63636'
-        campos[4].style.border = '2px solid #e63636'
-        spanInvalid[1].style.display = 'block'
-    }
-
-    if (error.code == "auth/invalid-email"){
-        campos[3].style.border = '2px solid #e63636'
-        spanInvalid[0].style.display = 'block'
-    }
 }
 
 function register(){
