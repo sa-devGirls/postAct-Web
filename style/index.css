@@ -244,9 +244,7 @@ label #cancel{
     opacity: 0;
     visibility: hidden;
 }
-#check:checked ~ .coments{
-    
-}
+
 .coment{
    display: flex;
    outline: none;
@@ -284,10 +282,4 @@ label #cancel{
     }
 }
 
-.coment-itens{
-    background-color: red;
-}
 
-.publish{
-    background-color: green;
-}
