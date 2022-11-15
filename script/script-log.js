@@ -37,6 +37,17 @@ function register(){
     }
 }
 
+// function recoverPassword(){
+//     showLoading()
+//     firebase.auth().sendPasswordResetEmail(forms.emailLogin().value).then(() => {
+//         hideLoading()
+//         alert('Email enviado com sucesso')
+//     }).catch(error => {
+//         hideLoading()
+//         alert(error)
+//     })
+// }
+
 btn.addEventListener('click', (event) =>{
     event.preventDefault()
     userValidate()
