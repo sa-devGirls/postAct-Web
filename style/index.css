@@ -282,4 +282,12 @@ label #cancel{
     }
 }
 
-
+.buttom-add{
+    width: 100px;
+    height: 20px;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    background-color:  #f1251e;
+}
