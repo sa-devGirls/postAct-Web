@@ -84,7 +84,10 @@
           <li class="post">
             <img class="ftPerfil" src="../img/karol-perfil.jpg" class="status-img">
             <textarea class="status-textarea" placeholder="Escreva ou suba uma foto." rows="5"></textarea>
-              <img class="attach-img" src="../img/adicionar-imagem.png">
+            <div class="attachContainer">
+              <img class="attach-img" id="imgPhoto" src="../img/adicionar-imagem.png" alt="Selecione uma imagem">
+              <input type="file" class="uploadfile" id="flImage" name="uploadfile" accept="image/*">
+            </div>
               <button class="publish-button">Publicar</button>
           </li>
         </ul>
