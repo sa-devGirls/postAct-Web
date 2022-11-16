@@ -41,8 +41,8 @@ main{
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: #151728;
-    color: white;
     border-radius: 5px;
+    margin: 10px;
 }
 /* li do post */
 .post{
@@ -65,19 +65,22 @@ main{
     display: block;
     color: rgb(150, 150, 150);
     margin-top: 20px;
-    border-top: 1px solid gray;
+   
 }
 .text-info{
 
     font-size: 15px;
     margin-bottom: 20px;
 }
-label{
-    width: 600px;
-}
 /* div do post dentro da li */
 .config_info{
    margin-left: 15px; 
+   background-color:#151728 ;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   background-color: #151728;
+   color: white;
+   border-radius: 5px;
 }
 .config_info h2{
     display: inline-block;
@@ -101,12 +104,39 @@ label{
     background-color: #6C63FF;
     color: white;
 }
-
+.text-post{
+    width: 300px;
+}
 .list{
     color: white;
     font-size: 24px;
 }
+.config-post{
+    display: flex;
+    align-items: center;
+}
 .buttom-add{
+    width: 130px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    background-color:  #11101d;
+    cursor: pointer;
+    margin-left: 680px;   
+}
+.buttom-arrow{
+    width: 45px;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    background-color: transparent;
+    cursor: pointer;
+   margin-left: 750px;   
+}
+.buttom-rede{
     width: 170px;
     height: 25px;
     border-radius: 3px;
@@ -114,4 +144,17 @@ label{
     color: white;
     margin-left: 10px;
     background-color:  #151728;
+}
+@media (max-width:1000){.buttom-add
+    {
+        width: 130px;
+        height: 30px;
+        border-radius: 8px;
+        border: none;
+        color: white;
+        margin-left: 10px;
+        background-color:  #11101d;
+        cursor: pointer;
+        margin-left: 560px;
+    }
 }
