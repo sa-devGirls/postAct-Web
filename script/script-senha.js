@@ -1,31 +1,5 @@
-// const url = "redefinir-senha.html"
-// const btn = document.getElementById('btn')
-
-// function openPag(url) {
-//     const novaJanela = window.open(url, '_self')
-//     novaJanela.focus()
-// }
-
-// btn.addEventListener('click', () =>{
-//     openPag(url)
-// })
-
 const campos = document.getElementsByClassName('required')
 const spans = document.getElementsByClassName('span-required')
-
-// function recoverPassword(){
-//     showLoading()
-//     firebase.auth().sendPasswordResetEmail(forms.emailRecover().value).then(response => {
-//         hideLoading()
-//         removeError(0)
-//         console.log('success', response)
-//         alert('Email enviado com sucesso')
-//     }).catch(error => {
-//         hideLoading()
-//         console.log('error', error)
-//         setEror(0)
-//     })
-// }
 
 function recoverPassword(){
     showLoading()

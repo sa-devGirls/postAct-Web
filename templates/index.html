@@ -56,9 +56,9 @@
             </li> 
           </ul>
           <div class="logoutContent">
-            <a href="login_cadastro.html">
+            <button class="logout" onclick="logout()">
               <img id="logo" src="../img/sair.png" alt="logo" width="35px">
-            </a>
+            </button>
           </div>
         </div>
 
@@ -179,7 +179,12 @@
         </section>
         </div>
     </main>
-   
+    <script src="../script/loading.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-auth-compat.js"></script>
+    <script src="../script/firebase-init.js"></script>
+    <script src="../script/index.js"></script>
+    <script src="../script/auth-guard.js"></script>
 </body>
 </div>
 </html>
