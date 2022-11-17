@@ -28,7 +28,7 @@ main{
 
 .ftPerfil{
     border-radius: 50%;
-    width: 50px;
+    width: 90px;
 }
 
 /* div do post */
@@ -125,7 +125,7 @@ main{
     margin-left: 10px;
     background-color:  #11101d;
     cursor: pointer;
-    margin-left: 680px;   
+    margin-left: 680px;
 }
 .buttom-arrow{
     width: 45px;
@@ -135,7 +135,7 @@ main{
     margin-left: 10px;
     background-color: transparent;
     cursor: pointer;
-   margin-left: 750px;   
+   margin-left: 750px;
 }
 .buttom-rede{
     width: 170px;
@@ -145,6 +145,8 @@ main{
     color: white;
     margin-left: 10px;
     background-color:  #151728;
+    position: relative;
+    cursor: pointer;
 }
 @media (max-width:1200px){.buttom-add
     {
@@ -168,7 +170,7 @@ main{
         margin-left: 10px;
         background-color: transparent;
         cursor: pointer;
-       margin-left: 440px;  
+       margin-left: 440px; 
        display: block;
        align-items: initial;
     }
