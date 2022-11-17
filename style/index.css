@@ -80,9 +80,20 @@ main{
     border-radius: 5px;
 }
 
+.list-coment{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100px;
+    background-color: #151728;
+    color: white;
+    border-radius: 5px;
+}
+
 /* li do publicar */
 .publish{
     padding: 15px 5px;
+    width: 79%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -146,6 +157,14 @@ main{
     cursor: pointer;
 }
 
+.teste{
+    padding: 15px 5px;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+
 input[type='file'] {
     display: none;
 }
@@ -165,11 +184,20 @@ input[type='file'] {
     color: white;
     border-radius: 5px;
 }
+
+
 /* li do post */
 .post{
     padding: 15px 5px;
     display: flex;
     align-items: flex-start;
+}
+
+
+
+.publication{
+    padding: 15px 5px;
+    display: flex;
 }
 
 /* @ do usuario */
@@ -255,8 +283,8 @@ label #cancel{
 .coment{
    display: flex;
    outline: none;
-   height: 60px;
-   width: 600px;
+   height: 50px;
+   width: 100%;
    color: rgb(255, 255, 255);
    background-color: transparent;  
    position: relative; 
@@ -273,24 +301,33 @@ label #cancel{
     box-shadow: 0 0 10px #6C63FF;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    width: 88px;
-    height: 60px;
+    width: 10%;
+    height: 50px;
     background-color: #6C63FF;
     color: white;
 }
-.comentContent span{
-    display: inline-block;
-    color: rgb(150, 150, 150);
-}
-@media (max-width:800px){.coment
-    {
-   width: 100%;
+
+@media (max-width:800px){
+    .publish{
+        width: 100%;
     }
+
+    .publish-b{
+        font-size: 55%;
+    }
+
+
 }
 
 .publish{
-    background-color: red;
+    display: inline-block;
 }
 
+.post2{
+    padding: 15px 5px;
+    width: 9%;
+    display: inline-block;
+    align-items: flex-start;
+}
 
 
