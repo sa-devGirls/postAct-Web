@@ -115,6 +115,7 @@ main{
     display: flex;
     align-items: center;
 }
+
 .buttom-add{
     width: 130px;
     height: 30px;
@@ -145,7 +146,7 @@ main{
     margin-left: 10px;
     background-color:  #151728;
 }
-@media (max-width:1000){.buttom-add
+@media (max-width:1200px){.buttom-add
     {
         width: 130px;
         height: 30px;
@@ -155,6 +156,23 @@ main{
         margin-left: 10px;
         background-color:  #11101d;
         cursor: pointer;
-        margin-left: 560px;
+        margin-left: 350px;
     }
+}
+@media (max-width:1200px){.buttom-arrow
+    {
+        width: 45px;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        margin-left: 10px;
+        background-color: transparent;
+        cursor: pointer;
+       margin-left: 440px;  
+       display: block;
+       align-items: initial;
+    }
+}
+h2{
+    color: white;
 }
