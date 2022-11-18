@@ -84,7 +84,6 @@ main{
     display: flex;
     align-items: center;
     position: relative;
-    height: 100px;
     background-color: #151728;
     color: white;
     border-radius: 5px;
@@ -92,12 +91,12 @@ main{
 
 /* li do publicar */
 .publish{
-    padding: 15px 5px;
     width: 79%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-left: 5px;
     
 }
 /*.publish{
@@ -281,7 +280,7 @@ label #cancel{
 }
 
 .coment{
-   display: flex;
+   display: inline-block;
    outline: none;
    height: 50px;
    width: 100%;
@@ -326,7 +325,7 @@ label #cancel{
 .post2{
     padding: 15px 5px;
     width: 9%;
-    display: inline-block;
+    display: flex;
     align-items: flex-start;
 }
 
