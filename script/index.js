@@ -7,20 +7,18 @@ function logout(){
 }
 
 
-function deleteUser(){
-    if (confirm('Você tem certeza que deseja deletar sua conta?') == true){
-        currentUser = firebase.auth().currentUser
-        currentUser.delete().then(() => {
-            alert('usuario deletado')
-        })
+let coments = document.getElementsByClassName('coments')
+
+coments.addEventListener('click', function(){
+    let comentContent = document.getElementsByClassName('comentContent')
+
+    if(comentContent.style.display === 'block'){
+        comentContent.style.display = 'none'
+    }else{
+        comentContent.style.display = 'block'
     }
-}
+})
 
-function comentsContent(){
-    const comentContent = document.getElementsByClassName('comentContent')
-    comentContent.style.display = 'block'
-
-}
 
 
 let photo = document.getElementById('imgPhoto');
