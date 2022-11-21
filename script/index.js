@@ -16,6 +16,13 @@ function deleteUser(){
     }
 }
 
+function comentsContent(){
+    const comentContent = document.getElementsByClassName('comentContent')
+    comentContent.style.display = 'block'
+
+}
+
+
 let photo = document.getElementById('imgPhoto');
 let file = document.getElementById('flImage');
 

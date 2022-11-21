@@ -89,7 +89,6 @@ main{
     border-radius: 5px;
 }
 
-/* li do publicar */
 .publish{
     width: 79%;
     display: flex;
@@ -97,7 +96,6 @@ main{
     justify-content: center;
     text-align: center;
     margin-left: 5px;
-    
 }
 /*.publish{
     padding: 15px 5px;
@@ -315,18 +313,25 @@ label #cancel{
         font-size: 55%;
     }
 
-
 }
 
-.publish{
-    display: inline-block;
-}
+/* @media (max-width:900px){
+    .publish{
+        width: 100%;
+    }
+
+} */
 
 .post2{
+    display: inline-block;
     padding: 15px 5px;
     width: 9%;
     display: flex;
     align-items: flex-start;
+}
+
+.comentContent{
+    display: none;
 }
 
 
