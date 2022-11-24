@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ept-br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,121 +9,147 @@
     <link rel="stylesheet" href="../style/config.css">
 </head>
 <body> 
-    <div class="container">
-        <header>
+  <div class="container">
+    <header>
 
-            <div class="sidebar">
-                 
-               <ul>
-                <li class="logoContent">
-                  <a href="#">
-                    <img id="logo" src="../img/logo.png" alt="logo" width="43px">
+        <div class="sidebar">
+           <ul>
+            <li class="logoContent">
+              <a href="#">
+                <img id="logo" src="../img/logo.png" alt="logo" width="43px">
+              </a>
+           </li>
+           </ul> 
+
+          <ul class="nav_list">
+              <li>
+                  <a href="index.html">
+                    <img src="../img/menu.png" alt="inicio" width="33px" height="33px">
+                      <span class="links_name">Início</span>
+                      <span class="toolipe">Início</span>
                   </a>
-               </li>
-               </ul> 
-    
-              <ul class="nav_list">
-                  <li>
-                      <a href="index.html">
-                        <img src="../img/menu.png" alt="inicio" width="33px" height="33px">
-                          <span class="links_name">Início</span>
-                          <span class="toolipe">Início</span>
-                      </a>
-                  </li>
-    
-                  <li>
-                      <a href="#">
-                        <img src="../img/lupa (1).png" alt="lupa" width="28px">
-                          <span class="links_name">Procurar</span>
-                          <span class="toolipe">Procurar</span>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="config.html">
-                        <img src="../img/engrenagem.png" alt="configurações" width="28px">
-                          <span class="links_name">Configurações</span>
-                          <span class="toolipe">Configurações</span>
-                      </a>
-                  </li> 
-                  <li>
-                    <a href="perfil.html">
-                      <img src="../img/perfil.png" alt="Perfil" width="28px">
-                        <span class="links_name">Perfil</span>
-                        <span class="toolipe">Perfil</span>
-                    </a>
-                </li> 
-              </ul>
-              <div class="logoutContent">
-                <a href="login_cadastro.html">
-                  <img id="logo" src="../img/sair.png" alt="logo" width="35px">
-                </a>
-              </div>
-            </div>
-        </header>
-    <main>
-        <section class="config">
-        <div class="config-post">
-            <ul class="list">
-              <li class="post">
-                <img class="ftPerfil" src="../img/thienne-perfil.jpg" class="status-img" alt="ftPerfil" width="28px">
-                
-                  <div class="config_info">
-                      <h2>Thienne Czizeweski</h2>
-                      <div class="text-post">
-                        <span>Front-end developer | HTML | CSS | JS</span>
-                        <button class="buttom-add"> 
-                            Adicionar rede social
-                       </button>
-                            <div class="social">
-                            <a href=""><img src="../img/adicionar-imagem.png" alt="linkedin" width="20px"></a>
-                            <a href=""><img src="../img/adicionar-imagem.png" alt="Github" width="20px"></a>
-                            <a href=""><img src="../img/adicionar-imagem.png" alt="whatsapp" width="20px"></a>
-                            <a href=""><img src="../img/adicionar-imagem.png" alt="email" width="20px"></a> 
-                        </div>
-                      </div>
-                  </div>
-                </li>    
-            </ul> 
-          </div>
-          <div class="config-post">
-            <ul class="list">
-              <li class="post">
-                  <div class="config_info">
-                      <h2>Infromações pessoais</h2>
-                      <div class="text-post">
-                        <label class="info">Deletar conta temporariamente<label>
-                        <label class="info">Biografia<label>
-                          <label class="info">Sobre mim<label>
-                        <button class="buttom-add"> 
-                           Nome completo
-                       </button>
-                      </div>
-                  </div>
-                </li>    
-            </ul> 
-          </div>
-          <section class="config">
-            <div class="config-post">
-                <ul class="list">
-                  <li class="post">
-                      <div class="config_info">
-                          <h2>Gerenciamento da conta</h2>
-                          <div class="text-post">
-                            <button class="buttom-add"> 
-                              Desativar conta
-                            </button>
-                              <button class="buttom-add" onclick="deleteUser()"> 
-                                Excluir conta
-                              </button>
-                          </div>
-                      </div>
-                    </li>    
-                </ul> 
-              </div>
-    </main>
-    </section>
-    </div>
+              </li>
 
+              <li>
+                  <a href="#">
+                    <img src="../img/lupa (1).png" alt="lupa" width="28px">
+                      <span class="links_name">Procurar</span>
+                      <span class="toolipe">Procurar</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="config.html">
+                    <img src="../img/engrenagem.png" alt="configurações" width="28px">
+                      <span class="links_name">Configurações</span>
+                      <span class="toolipe">Configurações</span>
+                  </a>
+              </li> 
+              <li>
+                <a href="perfil.html">
+                  <img src="../img/perfil.png" alt="Perfil" width="28px">
+                    <span class="links_name">Perfil</span>
+                    <span class="toolipe">Perfil</span>
+                </a>
+            </li> 
+          </ul>
+          <div class="logoutContent">
+            <a href="login_cadastro.html">
+              <img id="logo" src="../img/sair.png" alt="logo" width="35px">
+            </a>
+          </div>
+        </div>
+    </header>
+<main>
+    <section class="config">
+    <div class="post-feed">
+        <ul class="listProfile">
+          <li class="profile">
+            <img class="ftPerfil" src="../img/thienne-perfil.jpg" class="status-img" alt="ftPerfil" width="28px">
+                  <div class="text-post">                          
+                        <button class="buttom-profile"> 
+                          Alterar foto de perfil
+                     </button>
+                  </div>
+            </li>    
+        </ul> 
+      </div>
+      <div class="post-feed">
+        <ul class="listPost">
+          <li class="post">
+              <div class="config_info">
+                  <div class="text-post">
+                        <div class="social">
+                        <a href=""><img src="/img/linkedin.png" alt="linkedin" width="20px"></a>
+                        <a href=""><img src="/img/github.png" alt="Github" width="20px"></a>
+                        <a href=""><img src="/img/whatsapp.png" alt="whatsapp" width="20px"></a>
+                        <a href=""><img src="/img/gmail.png" alt="email" width="20px"></a> 
+                        <button class="buttom-rede"> 
+                          Adicionar rede social
+                     </button>
+                    </div>
+                  </div>
+              </div>
+            </li>    
+        </ul> 
+      </div>
+     <!--<div class="conta" id="container">
+          <div class="form-container">
+              <form action="#">
+                  <input  type="text" id="change" class="change">
+              </form>
+          </div>
+      </div>-->
+      <div class="post-feed">
+        <ul class="listPost">
+          <li class="post">
+              <div class="post_info">
+                  <h2>Infromações pessoais</h2>
+                  <div class="text-post">
+                    <label class="info">Nome completo<label>
+                      <button class="buttom-arrow"> 
+                        <img src="/img/seta.png" alt="seta" width="30px">
+                    </button>
+                    <label class="info">Biografia<label>
+                      <button class="buttom-arrow"> 
+                        <img src="/img/seta.png" alt="seta" width="30px">
+                    </button>
+                      <label class="info">Sobre mim<label>
+                    <button class="buttom-arrow"> 
+                       <img src="/img/seta.png" alt="seta" width="30px">
+                   </button>
+                  </div>
+              </div>
+            </li>    
+        </ul> 
+      </div>   
+      <div class="post-feed">
+        <ul class="listPost">
+          <li class="post">                
+              <div class="post_info">
+                <h2>Gerenciamento de conta</h2>
+                <div class="text-post">
+                  <label class="info">Excluir conta temporariamente<label>
+                    <button class="buttom-add"> 
+                      Excluir
+                  </button>
+            </div>
+              </div>
+            </li> 
+            <li class="post">                
+              <div class="post_info">
+                <div class="text-post">
+                  <label class="info">Excluir conta<label>
+                    <button class="buttom-add" onclick="deleteUser()"> 
+                    Excluir conta
+                  </button>
+            </div>
+              </div>
+            </li>   
+        </ul> 
+      </div>
+</main>
+</section>
+</div>
     <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-auth-compat.js"></script>
     <script src="../script/firebase-init.js"></script>
