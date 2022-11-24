@@ -28,7 +28,7 @@ main{
 
 .ftPerfil{
     border-radius: 50%;
-    width: 50px;
+    width: 90px;
 }
 
 /* div do post */
@@ -41,8 +41,15 @@ main{
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: #151728;
-    color: white;
     border-radius: 5px;
+    margin: 10px;
+}
+.listProfile{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: transparent;
+    border-radius: 5px;
+    margin: 10px;
 }
 /* li do post */
 .post{
@@ -65,19 +72,21 @@ main{
     display: block;
     color: rgb(150, 150, 150);
     margin-top: 20px;
-    border-top: 1px solid gray;
+   
 }
 .text-info{
 
     font-size: 15px;
     margin-bottom: 20px;
 }
-label{
-    width: 600px;
-}
 /* div do post dentro da li */
 .config_info{
    margin-left: 15px; 
+   padding-top: 5px;
+   padding-bottom: 5px;
+   background-color: transparent;
+   color: white;
+   border-radius: 5px;
 }
 .config_info h2{
     display: inline-block;
@@ -101,12 +110,51 @@ label{
     background-color: #6C63FF;
     color: white;
 }
-
+.text-post{
+    width: 300px;
+}
 .list{
     color: white;
     font-size: 24px;
 }
+.config-post{
+    display: flex;
+    align-items: center;
+}
+/*botões*/
 .buttom-add{
+    width: 130px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background-color:  #11101d;
+    cursor: pointer;
+    margin-left: 220%;
+    /*margin-left: 680px;*/
+}
+.buttom-arrow{
+    width: 45px;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    background-color: transparent;
+    cursor: pointer;
+   margin-left: 750px;
+}
+.buttom-profile{
+    width: 170px;
+    height: 25px;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    margin-right: 0%;
+    background-color:  #151728;
+    position: relative;
+    cursor: pointer;
+}
+.buttom-rede{
     width: 170px;
     height: 25px;
     border-radius: 3px;
@@ -114,4 +162,66 @@ label{
     color: white;
     margin-left: 10px;
     background-color:  #151728;
+    position: relative;
+    cursor: pointer;
+}
+/*media dos botões*/
+@media (max-width:1200px){.buttom-add
+    {
+        width: 130px;
+        height: 30px;
+        border-radius: 8px;
+        border: none;
+        color: white;
+        margin-left: 10px;
+        background-color:  #11101d;
+        cursor: pointer;
+        margin-left: 350px;
+        margin-left: 120%;
+    }
+}
+@media (max-width:540px){.buttom-add
+    {
+        width: 130px;
+        height: 30px;
+        border-radius: 8px;
+        border: none;
+        color: white;
+        margin-left: 0%;
+        background-color:  #11101d;
+        cursor: pointer;
+        margin-left: 70%;
+    }
+}
+
+/*media do  card info*/
+@media (max-width:1200px){.buttom-arrow
+    {
+        width: 45px;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        margin-left: 10px;
+        background-color: transparent;
+        cursor: pointer;
+       margin-left: 440px; 
+       display: block;
+       align-items: initial;
+    }
+}
+@media (max-width:540px){.buttom-arrow
+    {
+        width: 45px;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        background-color: transparent;
+        cursor: pointer;
+       margin-left: 100%; 
+       display: block;
+       align-items: initial;
+    }
+}
+h2{
+    color: white;
 }
